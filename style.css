@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+li {
+  list-style: none;
+}
+li,
+a,
+p {
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.4rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+}
+section {
+  padding: 1.5% 5%;
+}
+
+/*----Header secton--*/
+.header {
+  position: sticky;
+  height: 15vh;
+  top: 0;
+  z-index: 10;
+  transition: 0.5s;
+}
+.brand-logo {
+  width: 250px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul li a {
+  color: #111;
+}
+nav ul li a:hover {
+  color: #111;
+}
+nav ul li a::after {
+  content: " ";
+  width: 0;
+  height: 2px;
+  background: #ed0000;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+.menu-items {
+  display: flex;
+  gap: 40px;
+  padding-top: 20px;
+}
+.menu-icon {
+  display: none;
+}
+
+/*Hero Section*/
+.hero {
+  position: relative;
+}
+.slide {
+  height: 80vh;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(rgba(246, 176, 26, 0.5), rgba(227, 8, 8, 0.5));
+}
+.slide > div {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: absolute;
+  animation: slide 25s infinite;
+  opacity: 0;
+}
+.slide > div:nth-child(1) {
+  background-image: linear-gradient(
+      rgba(246, 176, 26, 0.5),
+      rgba(227, 8, 8, 0.5)
+    ),
+    url(images/hero-img1.jpg);
+}
+.slide > div:nth-child(2) {
+  background-image: linear-gradient(
+      rgba(246, 176, 26, 0.5),
+      rgba(227, 8, 8, 0.5)
+    ),
+    url(images/hero-img2.jpg);
+  animation-delay: 5s;
+}
+.slide > div:nth-child(3) {
+  background-image: linear-gradient(
+      rgba(246, 176, 26, 0.5),
+      rgba(227, 8, 8, 0.5)
+    ),
+    url(images/hero-img3.jpg);
+  animation-delay: 10s;
+}
+.slide > div:nth-child(4) {
+  background-image: linear-gradient(
+      rgba(246, 176, 26, 0.5),
+      rgba(227, 8, 8, 0.5)
+    ),
+    url(images/hero-img4.jpg);
+  animation-delay: 15s;
+}
+.slide > div:nth-child(5) {
+  background-image: linear-gradient(
+      rgba(246, 176, 26, 0.5),
+      rgba(227, 8, 8, 0.5)
+    ),
+    url(images/hero-img5.jpg);
+  animation-delay: 20s;
+}
+
+.hero-text {
+  transform: translateY(-25rem);
+  text-align: center;
+  color: #fff;
+}
+.hero-text h1 {
+  padding-bottom: 1.2%;
+  padding-inline: 3%;
+  text-shadow: 8px 5px 5px #201f1f;
+  font-weight: 700;
+}
+.hero-text h4 {
+  padding-bottom: 1.2%;
+  padding-inline: 25%;
+  text-shadow: 2px 2px 2px #333;
+  font-weight: 600;
+}
+.hero-btn {
+  border: none;
+  border-radius: 3.5px;
+  padding: 10px;
+  background-color: #ed0000;
+  color: #fff;
+  transition: 0.7s;
+}
+.hero-btn a {
+  color: inherit;
+}
+.hero-btn:hover {
+  border: 1px solid #ed0000;
+  background-color: #fff;
+  color: #ed0000;
+}
+@keyframes slide {
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 0;
+  }
+  .navbar {
+    padding: 1.5% 5%;
+  }
+  .brand-logo {
+    width: 180px;
+  }
+  .menu-items {
+    background-color: #edeaea;
+    width: 100%;
+    position: absolute;
+    margin-top: 3%;
+    top: 80%;
+    right: 0;
+    display: none;
+  }
+  .menu-items li {
+    padding-bottom: 20px;
+    margin-left: 10%;
+  }
+  .menu-icon {
+    display: inline;
+    padding-top: 10px;
+    font-size: 25px;
+    color: #333;
+  }
+  nav ul li a::after {
+    position: absolute;
+    left: 0;
+  }
+  .hero-text {
+    transform: translateY(-25rem);
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 1.1rem;
+  }
+  .hero-text {
+    transform: translateY(-20rem);
+  }
+  .hero-text h1 {
+    padding-bottom: 1.4%;
+    padding-inline: 2%;
+    text-shadow: 8px 5px 5px #201f1f;
+    font-weight: 600;
+  }
+  .hero-text h4 {
+    padding-bottom: 1.4%;
+    padding-inline: 15%;
+    text-shadow: 3px 3px 2px #000;
+    font-weight: 500;
+  }
+}
+@media (max-width: 425px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 375px) {
+  .hero-text {
+    transform: translateY(-25rem);
+  }
+}
+@media (max-width: 320px) {
+}
