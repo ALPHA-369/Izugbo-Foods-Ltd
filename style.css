@@ -196,7 +196,7 @@ nav ul li a:hover::after {
     width: 180px;
   }
   .menu-items {
-    background-color: #edeaea;
+    background-color: #fff;
     width: 100%;
     position: absolute;
     margin-top: 3%;
