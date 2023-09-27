@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -42,7 +46,7 @@ section {
   height: 15vh;
   top: 0;
   z-index: 10;
-  transition: 0.3s ease-in-out;
+  background-color: #fff;
 }
 .brand-logo {
   width: 250px;
@@ -102,14 +106,14 @@ nav ul li a:hover::after {
       rgba(246, 176, 26, 0.5),
       rgba(227, 8, 8, 0.5)
     ),
-    url(images/hero-img1.jpg);
+    url(images/peanut-img1.jpg);
 }
 .slide > div:nth-child(2) {
   background-image: linear-gradient(
       rgba(246, 176, 26, 0.5),
       rgba(227, 8, 8, 0.5)
     ),
-    url(images/hero-img2.jpg);
+    url(images/peanut-img3.jpg);
   animation-delay: 5s;
 }
 .slide > div:nth-child(3) {
@@ -117,7 +121,7 @@ nav ul li a:hover::after {
       rgba(246, 176, 26, 0.5),
       rgba(227, 8, 8, 0.5)
     ),
-    url(images/hero-img3.jpg);
+    url(images/cookies-img3.jpg);
   animation-delay: 10s;
 }
 .slide > div:nth-child(4) {
@@ -125,7 +129,7 @@ nav ul li a:hover::after {
       rgba(246, 176, 26, 0.5),
       rgba(227, 8, 8, 0.5)
     ),
-    url(images/hero-img4.jpg);
+    url(images/peanut-img5.jpg);
   animation-delay: 15s;
 }
 .slide > div:nth-child(5) {
@@ -133,28 +137,31 @@ nav ul li a:hover::after {
       rgba(246, 176, 26, 0.5),
       rgba(227, 8, 8, 0.5)
     ),
-    url(images/hero-img5.jpg);
+    url(images/royal-snacks1.jpg);
   animation-delay: 20s;
 }
-
-.hero-text {
-  transform: translateY(-25rem);
+.hero-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 30%;
+  padding-inline: 10%;
   text-align: center;
   color: #fff;
 }
-.hero-text h1 {
+.hero-content h1 {
   padding-bottom: 1.2%;
   padding-inline: 3%;
   text-shadow: 8px 5px 5px #201f1f;
   font-weight: 700;
 }
-.hero-text h4 {
+.hero-content h4 {
   padding-bottom: 1.2%;
   padding-inline: 25%;
   text-shadow: 2px 2px 2px #333;
   font-weight: 600;
 }
-.hero-btn {
+.btn {
   border: none;
   border-radius: 3.5px;
   padding: 10px;
@@ -162,14 +169,32 @@ nav ul li a:hover::after {
   color: #fff;
   transition: 0.7s;
 }
-.hero-btn a {
+.btn a {
   color: inherit;
 }
-.hero-btn:hover {
+.btn:hover {
   border: 1px solid #ed0000;
   background-color: #fff;
   color: #ed0000;
 }
+.about div {
+  margin-top: 20px;
+}
+.about h1 {
+  text-align: center;
+}
+.about-img img {
+  max-width: 90%;
+  animation: fadeInUp 1s;
+}
+.about h1 {
+  color: #ed0000;
+}
+.about-content {
+  padding-inline: 3%;
+  animation: fadeInRight 1s;
+}
+
 @keyframes slide {
   10% {
     opacity: 1;
@@ -184,7 +209,16 @@ nav ul li a:hover::after {
     transform: scale(1.1);
   }
 }
-
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1.2s all ease;
+}
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
 @media (max-width: 1024px) {
   .header {
     padding: 0;
@@ -218,8 +252,13 @@ nav ul li a:hover::after {
     position: absolute;
     left: 0;
   }
-  .hero-text {
-    transform: translateY(-25rem);
+}
+@media (max-width: 991px) {
+  .about-img {
+    order: 2;
+  }
+  .about-img img {
+    max-width: 100%;
   }
 }
 @media (max-width: 768px) {
@@ -235,16 +274,13 @@ nav ul li a:hover::after {
   h4 {
     font-size: 1.1rem;
   }
-  .hero-text {
-    transform: translateY(-20rem);
-  }
-  .hero-text h1 {
+  .hero-content h1 {
     padding-bottom: 1.4%;
     padding-inline: 2%;
     text-shadow: 8px 5px 5px #201f1f;
     font-weight: 600;
   }
-  .hero-text h4 {
+  .hero-content h4 {
     padding-bottom: 1.4%;
     padding-inline: 15%;
     text-shadow: 3px 3px 2px #000;
@@ -266,9 +302,6 @@ nav ul li a:hover::after {
   }
 }
 @media (max-width: 375px) {
-  .hero-text {
-    transform: translateY(-25rem);
-  }
 }
 @media (max-width: 320px) {
 }
