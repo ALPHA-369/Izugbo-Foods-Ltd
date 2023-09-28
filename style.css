@@ -8,6 +8,7 @@ html {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
+
 li {
   list-style: none;
 }
@@ -217,13 +218,11 @@ nav ul li a:hover::after {
   transform: translateY(0);
   opacity: 1;
 }
-.brands {
-}
 .carousel {
-  max-width: 90%;
+  max-width: 100%;
 }
 .carousel img {
-  max-height: 400px;
+  max-height: 500px;
   object-fit: cover;
 }
 @media (max-width: 1024px) {
