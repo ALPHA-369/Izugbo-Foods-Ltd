@@ -39,6 +39,7 @@ h4 {
 }
 section {
   padding: 1.5% 5%;
+  margin-top: 5%;
 }
 
 /*----Header secton--*/
@@ -48,6 +49,7 @@ section {
   top: 0;
   z-index: 10;
   background-color: #fff;
+  margin-top: 0;
 }
 .brand-logo {
   width: 250px;
@@ -86,6 +88,7 @@ nav ul li a:hover::after {
 /*Hero Section*/
 .hero {
   position: relative;
+  margin-top: 0;
 }
 .hero-slide {
   height: 80vh;
@@ -220,6 +223,7 @@ nav ul li a:hover::after {
 .brands-slide {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 .brands-imgs {
   flex-basis: 55%;
@@ -228,7 +232,11 @@ nav ul li a:hover::after {
   position: relative;
 }
 .brands-img1 {
-  background-image: url(images/peanut-img4.jpg);
+  background-image: linear-gradient(
+      rgba(146, 151, 54, 0.3),
+      rgba(140, 134, 50, 0.3)
+    ),
+    url(images/peanut-img4.jpg);
   background-size: cover;
   background-position: 50% 80%;
   height: 100%;
@@ -243,7 +251,7 @@ nav ul li a:hover::after {
   width: 100%;
   background-position: 50% 50%;
   position: absolute;
-  transform: translateX(0);
+  transform: translateX(-100%);
 }
 .brands-img3 {
   background-image: url(images/cookies-img4.jpg);
@@ -252,7 +260,7 @@ nav ul li a:hover::after {
   width: 100%;
   background-position: 50% 50%;
   position: absolute;
-  transform: translateX(0);
+  transform: translateX(-100%);
 }
 .brands-img4 {
   background-image: url(images/cookies-img1.jpg);
@@ -260,7 +268,7 @@ nav ul li a:hover::after {
   height: 100%;
   width: 100%;
   position: absolute;
-  transform: translateX(0);
+  transform: translateX(-100%);
 }
 
 .brands-desc {
@@ -272,30 +280,31 @@ nav ul li a:hover::after {
 .brands-desc1 {
   height: 100%;
   width: 100%;
-  background-color: #e95252;
+  background-color: #e5f06a;
   position: absolute;
   transform: translateX(0);
+  padding: 20%;
 }
 .brands-desc2 {
   height: 100%;
   width: 100%;
   background-color: #525229;
   position: absolute;
-  transform: translateX(0);
+  transform: translateX(-100%);
 }
 .brands-desc3 {
   height: 100%;
   width: 100%;
   background-color: #52e952;
   position: absolute;
-  transform: translateX(0);
+  transform: translateX(-100%);
 }
 .brands-desc4 {
   height: 100%;
   width: 100%;
   background-color: #525252;
   position: absolute;
-  transform: translateX(0);
+  transform: translateX(-100%);
 }
 @media (max-width: 1024px) {
   .header {
@@ -363,6 +372,10 @@ nav ul li a:hover::after {
     padding-inline: 15%;
     text-shadow: 3px 3px 2px #000;
     font-weight: 500;
+  }
+  .brands-imgs,
+  .brands-desc {
+    flex: 0 0 100%;
   }
 }
 @media (max-width: 425px) {
