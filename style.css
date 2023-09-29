@@ -217,12 +217,74 @@ nav ul li a:hover::after {
   transform: translateY(0);
   opacity: 1;
 }
-.carousel {
-  max-width: 100%;
+.brands-slide {
+  display: flex;
 }
-.carousel img {
-  max-height: 500px;
-  object-fit: cover;
+.brands-imgs {
+  flex-basis: 55%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+.brands-img1 {
+  background-image: url(images/cookies-img4.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: 50% 50%;
+  position: absolute;
+  transform: translateX(0);
+}
+.brands-img2 {
+  background-image: url(images/cookies-img1.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: translateX(0);
+}
+.brands-img3 {
+  background-image: url(images/peanut-img4.jpg);
+  background-size: cover;
+  background-position: 50% 80%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: translateX(0);
+}
+.brands-img4 {
+  background-image: url(images/peanut-img2.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: 50% 50%;
+  position: absolute;
+  transform: translateX(0);
+}
+.brands-desc {
+  flex-basis: 40%;
+  height: 500px;
+  overflow: hidden;
+}
+.brands-desc1 {
+  height: 100%;
+  width: 100%;
+  background-color: #e95252;
+}
+.brands-desc2 {
+  height: 100%;
+  width: 100%;
+  background-color: #525229;
+}
+.brands-desc3 {
+  height: 100%;
+  width: 100%;
+  background-color: #52e952;
+}
+.brands-desc4 {
+  height: 100%;
+  width: 100%;
+  background-color: #525252;
 }
 @media (max-width: 1024px) {
   .header {
