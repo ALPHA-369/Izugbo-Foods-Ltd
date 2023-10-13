@@ -232,11 +232,7 @@ nav ul li a:hover::after {
   position: relative;
 }
 .brands-img1 {
-  background-image: linear-gradient(
-      rgba(146, 151, 54, 0.3),
-      rgba(140, 134, 50, 0.3)
-    ),
-    url(images/peanut-img4.jpg);
+  background-image: url(images/peanut-img4.jpg);
   background-size: cover;
   background-position: 50% 80%;
   height: 100%;
@@ -263,7 +259,11 @@ nav ul li a:hover::after {
   transform: translateX(-100%);
 }
 .brands-img4 {
-  background-image: url(images/cookies-img1.jpg);
+  background-image: linear-gradient(
+      rgba(238, 113, 17, 0.3),
+      rgba(247, 202, 41, 0.3)
+    ),
+    url(images/cookies-img1.jpg);
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -277,34 +277,57 @@ nav ul li a:hover::after {
   overflow: hidden;
   position: relative;
 }
+.brands-desc div {
+  padding: 20%;
+}
 .brands-desc1 {
   height: 100%;
   width: 100%;
-  background-color: #e5f06a;
+  background-color: #bad1ec;
   position: absolute;
   transform: translateX(0);
-  padding: 20%;
 }
 .brands-desc2 {
   height: 100%;
   width: 100%;
-  background-color: #525229;
+  background-color: #bdbfb8;
   position: absolute;
   transform: translateX(-100%);
 }
 .brands-desc3 {
   height: 100%;
   width: 100%;
-  background-color: #52e952;
+  background-color: #f19ea2;
   position: absolute;
   transform: translateX(-100%);
 }
 .brands-desc4 {
   height: 100%;
   width: 100%;
-  background-color: #525252;
+  background-color: #bb965c;
   position: absolute;
   transform: translateX(-100%);
+}
+.slide-btn i {
+  position: absolute;
+  z-index: 4;
+  display: flex;
+  color: #ccc;
+  background-color: rgba(77, 73, 73, 0.5);
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 25px;
+}
+.fa-arrow-left {
+  top: 14rem;
+  left: 2rem;
+}
+.fa-arrow-right {
+  top: 14rem;
+  right: 2rem;
+}
+.brands-desc .btn {
+  background-color: rgba(77, 73, 73, 0.5);
 }
 @media (max-width: 1024px) {
   .header {
