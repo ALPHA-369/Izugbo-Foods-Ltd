@@ -317,13 +317,18 @@ nav ul li a:hover::after {
   border-radius: 50%;
   padding: 8px;
   font-size: 25px;
+  transition: 0.5s;
+}
+.slide-btn i:hover {
+  color: #fff;
+  background-color: #201f1f;
 }
 .fa-arrow-left {
-  top: 14rem;
+  top: 16rem;
   left: 2rem;
 }
 .fa-arrow-right {
-  top: 14rem;
+  top: 16rem;
   right: 2rem;
 }
 .brands-desc .btn {
@@ -399,7 +404,6 @@ nav ul li a:hover::after {
   .brands-imgs,
   .brands-desc {
     flex: 0 0 100%;
-    top: 0;
   }
 }
 @media (max-width: 425px) {
