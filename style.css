@@ -238,7 +238,7 @@ nav ul li a:hover::after {
   height: 100%;
   width: 100%;
   position: absolute;
-  transform: translateX(0);
+  transform: translateX(-100%);
 }
 .brands-img2 {
   background-image: url(images/peanut-img2.jpg);
@@ -256,7 +256,7 @@ nav ul li a:hover::after {
   width: 100%;
   background-position: 50% 50%;
   position: absolute;
-  transform: translateX(-100%);
+  transform: translateX(0);
 }
 .brands-img4 {
   background-image: linear-gradient(
@@ -278,14 +278,14 @@ nav ul li a:hover::after {
   position: relative;
 }
 .brands-desc div {
-  padding: 20%;
+  padding: 10%;
 }
 .brands-desc1 {
   height: 100%;
   width: 100%;
   background-color: #bad1ec;
   position: absolute;
-  transform: translateX(0);
+  transform: translateX(-100%);
 }
 .brands-desc2 {
   height: 100%;
@@ -299,7 +299,7 @@ nav ul li a:hover::after {
   width: 100%;
   background-color: #f19ea2;
   position: absolute;
-  transform: translateX(-100%);
+  transform: translateX(0);
 }
 .brands-desc4 {
   height: 100%;
@@ -391,12 +391,12 @@ nav ul li a:hover::after {
 .socials-icons {
   margin-top: 40px;
 }
-.fa-brands {
+.socials .fa-brands {
   font-size: 70px;
   padding: 20px;
   transition: 0.5s;
 }
-.fa-brands:hover {
+.socials .fa-brands:hover {
   transform: translateY(-5px);
   filter: drop-shadow(5px 7px 5px #777);
 }
@@ -410,11 +410,25 @@ nav ul li a:hover::after {
   color: #266ad1;
 }
 .footer {
-  background-color: #aaa;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ccc;
+}
+.footer .brand-logo {
+  margin-bottom: 20px;
+}
+.footer a:hover {
+  color: #ed0000;
+  transition: 0.5s;
 }
 .copyright {
   text-align: center;
   margin-top: 20px;
+}
+@media (max-width: 1257px) {
+  .brands-desc div {
+    padding: 10%;
+  }
 }
 @media (max-width: 1024px) {
   .header {
@@ -487,6 +501,25 @@ nav ul li a:hover::after {
   .brands-desc {
     flex: 0 0 100%;
   }
+  .brands-imgs {
+    height: 320px;
+  }
+  .brands-desc {
+    height: 250px;
+    transform: translateY(-38px);
+  }
+  .brands-desc div {
+    padding: 5%;
+  }
+  .brands-desc h3 {
+    font-size: 1rem;
+  }
+  .brands-desc p {
+    font-size: 0.9rem;
+  }
+  .brands-desc .btn {
+    scale: 0.7;
+  }
 }
 @media (max-width: 425px) {
   h1 {
@@ -500,6 +533,9 @@ nav ul li a:hover::after {
   }
   h4 {
     font-size: 1rem;
+  }
+  .brands-desc p {
+    font-size: 0.7rem;
   }
 }
 @media (max-width: 375px) {
