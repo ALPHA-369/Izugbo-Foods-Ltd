@@ -238,7 +238,7 @@ nav ul li a:hover::after {
   height: 100%;
   width: 100%;
   position: absolute;
-  transform: translateX(-100%);
+  transform: translateX(0);
 }
 .brands-img2 {
   background-image: url(images/peanut-img2.jpg);
@@ -247,7 +247,7 @@ nav ul li a:hover::after {
   width: 100%;
   background-position: 50% 50%;
   position: absolute;
-  transform: translateX(0);
+  transform: translateX(-100%);
 }
 .brands-img3 {
   background-image: url(images/cookies-img4.jpg);
@@ -285,14 +285,14 @@ nav ul li a:hover::after {
   width: 100%;
   background-color: #bad1ec;
   position: absolute;
-  transform: translateX(-100%);
+  transform: translateX(0);
 }
 .brands-desc2 {
   height: 100%;
   width: 100%;
   background-color: #a5f0f7;
   position: absolute;
-  transform: translateX(0);
+  transform: translateX(-100%);
 }
 .brands-desc3 {
   height: 100%;
@@ -333,6 +333,88 @@ nav ul li a:hover::after {
 }
 .brands-desc .btn {
   background-color: rgba(77, 73, 73, 0.5);
+}
+.pwu {
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.pwu h1 {
+  color: #ed0000;
+}
+.fa-truck {
+  font-size: 50px;
+  padding: 30px;
+  background-color: #d8d3d3;
+  height: 100px;
+  width: 120px;
+  border-radius: 100px;
+}
+.pwu .btn {
+  padding-inline: 50px;
+}
+.cta {
+  padding: 0;
+  text-align: center;
+  background-image: linear-gradient(
+      rgba(246, 176, 26, 0.3),
+      rgba(227, 8, 8, 0.3)
+    ),
+    url(images/royal-snacks2.jpg);
+  height: 400px;
+  background-size: cover;
+  background-position: 50% 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.cta h1,
+.cta h2 {
+  color: #fff;
+  text-shadow: 2px 2px 3px #444;
+}
+.cta h2 {
+  font-style: italic;
+}
+.socials {
+  text-align: center;
+}
+.socials h1 {
+  color: #ed0000;
+}
+.socials-icons {
+  margin-top: 40px;
+}
+.fa-brands {
+  font-size: 70px;
+  padding: 20px;
+  transition: 0.5s;
+}
+.fa-brands:hover {
+  transform: translateY(-5px);
+  filter: drop-shadow(5px 7px 5px #777);
+}
+.fa-square-facebook:hover {
+  color: rgb(10, 60, 118);
+}
+.fa-square-instagram:hover {
+  color: #aa2652;
+}
+.fa-linkedin:hover {
+  color: #266ad1;
+}
+.footer {
+  background-color: #aaa;
+}
+.copyright {
+  text-align: center;
+  margin-top: 20px;
 }
 @media (max-width: 1024px) {
   .header {
