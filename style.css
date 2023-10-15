@@ -520,6 +520,10 @@ nav ul li a:hover::after {
   .brands-desc .btn {
     scale: 0.7;
   }
+  .fa-arrow-left,
+  .fa-arrow-right {
+    top: 10rem;
+  }
 }
 @media (max-width: 425px) {
   h1 {
