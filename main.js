@@ -19,6 +19,7 @@ $(document).ready(() => {
   });
   // Get the slide elements
   const slides = document.querySelectorAll(".slide");
+  const slideCaptions = document.querySelectorAll(".slide-caption");
   const slideBtn = document.querySelector(".slide-btn");
   const prevBtn = document.querySelector(".fa-arrow-left");
   const nextBtn = document.querySelector(".fa-arrow-right");
@@ -31,9 +32,15 @@ $(document).ready(() => {
       slide.classList.remove("active");
       slide.classList.add("inactive");
     });
+    slideCaptions.forEach((slideCaption) => {
+      slideCaption.classList.remove("active");
+      slideCaption.classList.add("inactive");
+    });
 
     slides[slideIndex].classList.remove("inactive");
     slides[slideIndex].classList.add("active");
+    slideCaptions[slideIndex].classList.remove("inactive");
+    slideCaptions[slideIndex].classList.add("active");
   }
 
   // Function to go to the next slide
