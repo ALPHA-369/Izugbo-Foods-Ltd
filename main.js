@@ -18,11 +18,11 @@ $(document).ready(() => {
     }
   });
   // Get the slide elements
-  const slides = document.querySelectorAll(".slide");
-  const slideCaptions = document.querySelectorAll(".slide-caption");
-  const slideBtn = document.querySelector(".slide-btn");
-  const prevBtn = document.querySelector(".fa-arrow-left");
-  const nextBtn = document.querySelector(".fa-arrow-right");
+  const slides = $(".slide");
+  const slideCaptions = $(".slide-caption");
+  const slideBtn = $(".slide-btn");
+  const prevBtn = $(".fa-arrow-left");
+  const nextBtn = $(".fa-arrow-right");
 
   let slideIndex = 0;
 
