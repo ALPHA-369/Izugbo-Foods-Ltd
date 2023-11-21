@@ -76,6 +76,38 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 100%;
 }
+.dropbtn {
+  border: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
 .menu-items {
   display: flex;
   gap: 40px;
@@ -223,7 +255,46 @@ nav ul li a:hover::after {
 .about-content {
   padding-inline: 3%;
 }
+.nutrition-table,
+.peanut-img2 {
+  margin-top: 50px;
+}
+.peanut h1 {
+  margin-top: 0;
+  color: #ad8436;
+  margin-bottom: 25px;
+}
+.peanut-img1 {
+  max-width: 90%;
+}
+.peanut-img2 {
+  width: 550px;
+  max-height: 500px;
+}
+.nutrition-table {
+  width: 80%;
+  border-collapse: collapse;
+}
+.nutrition-table th,
+.nutrition-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+.nutrition-table th {
+  background-color: #cb9b42;
+}
 
+.nutrition-table td:nth-child(odd) {
+  width: 50%;
+}
+.ingredients {
+  text-align: center;
+  margin-top: 50px;
+}
+.ingredients h2 {
+  color: #ad8436;
+}
 @keyframes slide {
   10% {
     opacity: 1;
@@ -436,15 +507,16 @@ nav ul li a:hover::after {
   transform: translateY(-5px);
   filter: drop-shadow(5px 7px 5px #777);
 }
-.fa-square-facebook:hover {
+.fa-square-facebook {
   color: rgb(10, 60, 118);
 }
-.fa-square-instagram:hover {
+.fa-square-instagram {
   color: #aa2652;
 }
-.fa-linkedin:hover {
+.fa-linkedin {
   color: #266ad1;
 }
+
 .footer {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -502,6 +574,13 @@ nav ul li a:hover::after {
   .goals div {
     padding: 15px 10px;
   }
+  .peanut-img2 {
+    max-width: 100%;
+    max-height: 80%;
+  }
+  .nutrition-table {
+    width: 100%;
+  }
 }
 @media (max-width: 991px) {
   .about-img {
@@ -516,6 +595,19 @@ nav ul li a:hover::after {
   .goals div {
     width: 100%;
     padding: 15px 10px;
+  }
+  .peanut-img1 {
+    max-width: 100%;
+  }
+  .peanut .content {
+    padding-top: 15px;
+  }
+  .peanut-img2 {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .nutrition-table {
+    width: 100%;
   }
 }
 @media (max-width: 768px) {
