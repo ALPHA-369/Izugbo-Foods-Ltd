@@ -258,10 +258,17 @@ nav ul li a:hover::after {
   color: #ad8436;
   margin-bottom: 25px;
 }
-.peanut-img1 {
+.cookies h1 {
+  margin-top: 0;
+  color: #c63e42;
+  margin-bottom: 25px;
+}
+.peanut-img1,
+.cookies-img1 {
   max-width: 90%;
 }
-.peanut-img2 {
+.peanut-img2,
+.cookies-img2 {
   width: 550px;
   max-height: 500px;
 }
@@ -275,8 +282,11 @@ nav ul li a:hover::after {
   padding: 8px;
   text-align: left;
 }
-.nutrition-table th {
+.peanut .nutrition-table th {
   background-color: #cb9b42;
+}
+.cookies .nutrition-table th {
+  background-color: #c63e42;
 }
 
 .nutrition-table td:nth-child(odd) {
@@ -286,8 +296,11 @@ nav ul li a:hover::after {
   text-align: center;
   margin-top: 50px;
 }
-.ingredients h2 {
+.peanut .ingredients h2 {
   color: #ad8436;
+}
+.cookies .ingredients h2 {
+  color: #c63e42;
 }
 @keyframes slide {
   10% {
@@ -568,7 +581,8 @@ nav ul li a:hover::after {
   .goals div {
     padding: 15px 10px;
   }
-  .peanut-img2 {
+  .peanut-img2,
+  .cookies-img2 {
     max-width: 100%;
     max-height: 80%;
   }
@@ -590,13 +604,16 @@ nav ul li a:hover::after {
     width: 100%;
     padding: 15px 10px;
   }
-  .peanut-img1 {
+  .peanut-img1,
+  .cookies-img1 {
     max-width: 100%;
   }
-  .peanut .content {
+  .peanut .content,
+  .cookies .content {
     padding-top: 15px;
   }
-  .peanut-img2 {
+  .peanut-img2,
+  .cookies-img2 {
     max-width: 100%;
     max-height: 100%;
   }
