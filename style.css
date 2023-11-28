@@ -250,7 +250,8 @@ nav ul li a:hover::after {
   padding-inline: 3%;
 }
 .nutrition-table,
-.peanut-img2 {
+.peanut-img2,
+.cookies-img2 {
   margin-top: 50px;
 }
 .peanut h1 {
