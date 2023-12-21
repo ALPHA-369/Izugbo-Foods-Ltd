@@ -215,6 +215,7 @@ nav ul li a:hover::after {
   margin-top: 20px;
 }
 .history p {
+  color: #548235;
   padding: 15px 20px;
 }
 .about-img img {
@@ -524,7 +525,23 @@ nav ul li a:hover::after {
 .fa-linkedin {
   color: #266ad1;
 }
-
+.partner .row {
+  padding-inline: 4rem;
+}
+.partner p {
+  color: #548235;
+  font-size: 1.5rem;
+  padding-inline: 2rem;
+}
+.careers h1 {
+  font-size: 4rem;
+}
+.careers p {
+  color: #548235;
+}
+.careers {
+  padding-inline: 10rem;
+}
 .footer {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -589,6 +606,19 @@ nav ul li a:hover::after {
   }
   .nutrition-table {
     width: 100%;
+  }
+  .partner .row {
+    padding-inline: 2rem;
+  }
+  .partner p {
+    font-size: 1.3rem;
+    padding-inline: 0;
+  }
+  .careers {
+    padding-inline: 0rem;
+  }
+  .careers-content {
+    padding-inline: 2rem;
   }
 }
 @media (max-width: 991px) {
@@ -690,6 +720,13 @@ nav ul li a:hover::after {
   }
   .slide-captions p {
     font-size: 0.7rem;
+  }
+  .partner .row {
+    padding-inline: 1rem;
+  }
+  .partner p {
+    font-size: 1.1rem;
+    padding-inline: 0;
   }
 }
 @media (max-width: 375px) {
